@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/profile.css') }}">
+    <title>Ideas Brillantes - Perfil</title>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <a href="/dashboard" class="button">Panel de Control</a>
+        <a href="/logout" class="button logout-button">Salir</a>
+      </div>
+    </div>
+    <div class="title">
+      <span class="title-content">Nombre: {{user.name}}</span>
+      <span class="title-content title-second"> Alias: {{user.alias}}</span>
+      <span class="title-content title-third"> Correo Electrónico: {{user.email}}</span>
+      <hr />
+      <span class="title-content title-fourth"
+        >Total de Ideas publicadas: {{idea.ideas|length}}</span
+      >
+      <span class="title-content title-fifth"
+        >Total de me gusta a Ideas: {{like.likes|length}}</span
+      >
+    </div>
+  </body>
+</html>

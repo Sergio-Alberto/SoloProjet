@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  background-color: #1a1b26;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+.header {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.hello_user{
+  color: white;
+  font-size: 22px;
+  margin-left: 0px;
+}
+
+input {
+  font-size: 22px;
+  width: 890px;
+  height: 47px;
+}
+
+hr{
+  margin-bottom: 40px;
+}
+
+.button {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  margin: 10px;
+  border: 3px solid hsl(0, 74%, 40%);
+  border-radius: 10px;
+}
+
+.button:hover {
+  animation: pulsate 1s ease-in-out;
+}
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px hsl(0, 74%, 40%);
+  }
+}
+
+.button-post{
+  background-color: rgba(122, 122, 122, 0);
+  border: solid #3c67e3;
+  width: 100px;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  margin-top: 12px;
+}
+
+.button-del{
+  background-color: rgba(202, 228, 206, 0);
+  border: solid #3c67e3;
+  width: 100px;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  margin-top: 12px;
+}
+
+.idea_box {
+  border: solid #3c67e3;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  
+}
